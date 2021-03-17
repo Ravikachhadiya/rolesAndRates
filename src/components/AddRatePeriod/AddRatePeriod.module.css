@@ -1,0 +1,33 @@
+.table{
+    border-radius: 2px;
+}
+
+.tableHead .headCell{
+    color: rgb(71, 68, 68);
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.levelValue{
+    outline: none;
+    border: 1px solid rgba(255, 99, 71, 0.29);
+    height: 24px;
+    width: 110px;
+    padding-left: 5px;
+}
+
+.levelValue:disabled{
+    border: 1px solid rgba(255, 99, 71, 0.15);
+}
+
+.btn{
+    cursor: pointer;
+}
+
+/* .tableRow {
+    background-color: tomato;
+}
+
+.tableCell {
+    background-color: teal;
+} */

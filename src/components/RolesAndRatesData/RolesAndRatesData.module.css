@@ -1,0 +1,73 @@
+.table{
+    border-radius: 2px;
+    width: 100%;
+}
+
+.tableHead .headCell{
+    color: rgb(71, 68, 68);
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.btn{
+    height: fit-content;
+    outline: none;
+    border: 0;
+    padding: 8px 10px;
+    width: fit-content;
+    font-size: 0.9em;
+    font-weight: 600;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px rgb(226, 150, 119);
+    border-top: 1px solid rgb(226, 150, 119, 0.4);
+    border-left: 1px solid rgb(226, 150, 119, 0.4);
+    border-right: 1px solid rgb(226, 150, 119, 0.4);
+}
+
+@media only screen and (max-width: 540px) {
+    .table{
+        border-radius: 2px;
+        width: 80%;
+    }
+    .row{
+        width: 80%;
+    }
+    .tableHead{
+        margin-left: 0px;
+    }
+   .tableHead .headCell{
+        color: rgb(71, 68, 68);
+        font-weight: 600;
+        font-size: 1em;
+        padding: 3px;
+        margin: 0px;   
+        font-weight: 600;
+    }
+    .dataRow .data{
+        padding-left: 3px;
+    }
+    .btn{
+        box-shadow: none;
+        padding: 0;
+        font-size: 0.5em;
+        margin: 0px;
+    }
+    .icon{
+        padding: 0;
+        margin: 0px;
+    }
+    .subRow{
+        background-color: rgba(220, 220, 220, 0.624);
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .tableHead .headCell{
+        font-size: 0.85em;
+    }
+
+    .dataRow .data{
+        font-size: 0.8em;
+    }
+}

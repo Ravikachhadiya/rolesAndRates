@@ -1,0 +1,341 @@
+.layout{
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 95%;
+    text-align: left;
+    padding-left: 20px;
+    color:gray;
+    font-size: 1em;
+}
+
+.addRateFormLayout{
+    padding: 10px;
+}
+
+.addRateFormLayout form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.addRateForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    width: 35%;
+}
+
+.field{
+    margin: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+label{
+    font-size: 1em;
+    color: rgb(87, 85, 85);
+    padding-right: 20px;
+}
+
+label > span{
+    color: tomato;
+}
+
+.inputLayout{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100%;
+    padding-top: 0px;
+}
+
+.errorMsg{
+    padding-top: 10px;
+    font-size: 0.75em;
+    color: tomato;
+}
+
+.addRateForm div input{
+    border: none;
+    outline: none;
+    background-color: rgb(211,211,211,0.6);
+    border: 1px solid gainsboro;
+    height: 25px;
+    width: 225px;
+    padding-left: 5px;
+    font-size: 0.9em;
+}
+
+.addRatePeriod{
+    width: 60%;
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+.addRatePeriodBtn{
+    height: fit-content;
+    background-color: rgb(233, 92, 37);
+    outline: none;
+    border: 0;
+    padding: 10px 20px;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 600;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgb(226, 150, 119);
+}
+
+.addRatePeriodBtn:hover{
+    border: 1px solid rgb(228, 109, 62);
+}
+
+.addRatePeriodComponent {
+    margin: 20px 45px;
+}
+
+.submitLayout{
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+.btn{
+    margin-right: 20px;
+    height: fit-content;
+    outline: none;
+    border: 0;
+    padding: 8px 0;
+    width: 210px;
+    font-size: 0.9em;
+    font-weight: 600;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgb(226, 150, 119);
+}
+
+.returnBtn{
+    border: 2px solid #ed6969;
+    color: #ed6969;
+}
+
+.submitBtn{
+    border: 2px solid #5f9c6b;
+    color: #5f9c6b;
+}
+
+.returnBtn:hover{
+    box-shadow: 2px 3px 15px rgb(228, 108, 108);
+}
+
+.submitBtn:hover{
+    box-shadow: 2px 3px 15px #7faa71;
+}
+
+.submitBtn:disabled, .addRatePeriodBtn:disabled{
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.submitBtn:disabled {
+    box-shadow: inset 2px 2px 10px #7faa71;
+}
+
+.addRatePeriodBtn:disabled{
+    box-shadow: inset 2px 2px 10px rgb(153, 74, 43);
+    border: none;
+
+}
+
+@media only screen and (max-width: 1040px){
+
+    .addRateForm{
+        width: 45%;
+    }
+
+    .addRatePeriod{
+        width: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 820px){
+
+    .addRateForm{
+        width: 64%;
+    }
+
+    .addRatePeriod{
+        width: 38%;
+    }
+}
+
+@media only screen and (max-width: 655px){
+
+    .addRateForm{
+        width: 70%;
+    }
+
+    .addRatePeriod{
+        width: 25%;
+    }
+
+    .addRatePeriodBtn{
+        padding: 8px 16px;
+        font-size: 0.7em;
+    }
+
+    .btn{
+        padding: 8px 16px;
+        font-size: 0.7em;
+        width: 160px;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    .addRateFormLayout{
+        padding: 0px;
+    }
+
+    .addRateFormLayout form{
+        flex-direction: column;
+        justify-content: stretch;
+        /* background-color: green; */
+        align-items: center;
+    }
+
+    .addRateForm{
+        flex-direction: column;
+        align-items: stretch;
+        width: max-content;
+        /* background-color: hotpink; */
+    }
+
+    .field{
+        width: 90%;
+        margin: 16px;
+        display: flex;
+        justify-content: space-between;
+        /* background-color: gold; */
+    }
+
+    label{
+        font-size: 0.8em;
+        padding-right: 15px;
+    }
+
+    .inputLayout{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 100%;
+        padding-top: 0px;
+    }
+
+    .errorMsg{
+        padding-top: 10px;
+        font-size: 0.75em;
+        color: tomato;
+    }
+
+    .addRateForm div input{
+        border: none;
+        outline: none;
+        background-color: rgb(211,211,211,0.6);
+        border: 1px solid gainsboro;
+        height: 25px;
+        width: 150px;
+        padding-left: 5px;
+        font-size: 0.9em;
+    }
+
+    .addRatePeriod{
+        width: 100%;
+        text-align: center;
+    }
+
+    .addRatePeriodBtn{
+        height: fit-content;
+        background-color: rgb(233, 92, 37);
+        outline: none;
+        border: 0;
+        padding: 10px 20px;
+        color: white;
+        font-size: 0.9em;
+        font-weight: 600;
+        border-radius: 2px;
+        cursor: pointer;
+        box-shadow: 1px 1px 5px rgb(226, 150, 119);
+    }
+
+    .addRatePeriodBtn:hover{
+        border: 1px solid rgb(228, 109, 62);
+    }
+
+    .addRatePeriodComponent {
+        margin: 20px 45px;
+    }
+
+    .submitLayout{
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn{
+        height: fit-content;
+        outline: none;
+        border: 0;
+        width: 120px;
+        font-size: 0.8em;
+        font-weight: 600;
+        border-radius: 2px;
+        cursor: pointer;
+        box-shadow: 1px 1px 5px rgb(226, 150, 119);
+    }
+
+    .returnBtn{
+        border: 2px solid #ed6969;
+        color: #ed6969;
+    }
+
+    .submitBtn{
+        border: 2px solid #5f9c6b;
+        color: #5f9c6b;
+    }
+
+}
+
+@media only screen and (max-width: 360px){
+    .field{
+        width: 85%;
+        margin: 12px;
+    }
+
+    label{
+        font-size: 0.8em;
+        padding-right: 12px;
+    }
+
+    .addRateForm div input{
+        height: 20px;
+        width: 120px;
+        padding-left: 5px;
+        font-size: 0.8em;
+    }
+
+    .addRatePeriodBtn{
+        padding: 8px 16px;
+        font-size: 0.7em;
+    }
+
+}
